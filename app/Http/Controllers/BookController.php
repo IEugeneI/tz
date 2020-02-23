@@ -18,6 +18,7 @@ class BookController extends Controller
 
     public function store(BookRequest $request)
     {
+        //Выбирает из входящего массива  авторов , которые есть в бд
         $k=0;
         for($i=0;$i<count($request->authors_id);$i++)
         {
