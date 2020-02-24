@@ -16,7 +16,7 @@ toc_footers:
 # Info
 
 Welcome to the generated API reference.
-[Get Postman Collection](http://localhost/docs/collection.json)
+[Get Postman Collection](http://dream.work/docs/collection.json)
 
 <!-- END_INFO -->
 
@@ -31,14 +31,14 @@ APIs for managing books
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/books" \
+    -G "http://dream.work/api/books" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/books"
+    "http://dream.work/api/books"
 );
 
 let headers = {
@@ -83,6 +83,14 @@ fetch(url, {
                     "lastname": "Булгаков",
                     "created_at": null,
                     "updated_at": null
+                },
+                {
+                    "id": 5,
+                    "name": "Михаил",
+                    "surname": "Афанасьевич",
+                    "lastname": "Булгаков",
+                    "created_at": null,
+                    "updated_at": null
                 }
             ]
         },
@@ -106,6 +114,22 @@ fetch(url, {
                     "name": "Илья",
                     "surname": "Арнольдович",
                     "lastname": "Ильиф",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
+                    "id": 1,
+                    "name": "Илья",
+                    "surname": "Арнольдович",
+                    "lastname": "Ильиф",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
+                    "id": 2,
+                    "name": "Евгений",
+                    "surname": "Петрович",
+                    "lastname": "Петров",
                     "created_at": null,
                     "updated_at": null
                 },
@@ -175,6 +199,22 @@ fetch(url, {
                     "updated_at": null
                 },
                 {
+                    "id": 1,
+                    "name": "Илья",
+                    "surname": "Арнольдович",
+                    "lastname": "Ильиф",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
+                    "id": 2,
+                    "name": "Евгений",
+                    "surname": "Петрович",
+                    "lastname": "Петров",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
                     "id": 2,
                     "name": "Евгений",
                     "surname": "Петрович",
@@ -216,6 +256,22 @@ fetch(url, {
                     "updated_at": null
                 },
                 {
+                    "id": 3,
+                    "name": "Аркадий",
+                    "surname": "Натанович",
+                    "lastname": "Стругацкий",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
+                    "id": 4,
+                    "name": "Борис",
+                    "surname": "Натанович",
+                    "lastname": "Стругацкий",
+                    "created_at": null,
+                    "updated_at": null
+                },
+                {
                     "id": 4,
                     "name": "Борис",
                     "surname": "Натанович",
@@ -240,6 +296,14 @@ fetch(url, {
             "created_at": null,
             "updated_at": null,
             "authors": [
+                {
+                    "id": 6,
+                    "name": "Рей",
+                    "surname": "Дуглас",
+                    "lastname": "Бредбери",
+                    "created_at": null,
+                    "updated_at": null
+                },
                 {
                     "id": 6,
                     "name": "Рей",
@@ -431,7 +495,7 @@ fetch(url, {
     "per_page": 20,
     "prev_page_url": null,
     "to": 20,
-    "total": 30
+    "total": 35
 }
 ```
 
@@ -448,7 +512,7 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/books" \
+    "http://dream.work/api/books" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -d '{"name":"\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u043c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430","page_count":345,"authors_id":"authors_id[0] 1"}'
@@ -457,7 +521,7 @@ curl -X POST \
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/books"
+    "http://dream.work/api/books"
 );
 
 let headers = {
@@ -510,14 +574,14 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/books/1" \
+    -G "http://dream.work/api/books/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/books/1"
+    "http://dream.work/api/books/1"
 );
 
 let headers = {
@@ -576,16 +640,16 @@ Parameter | Status | Description
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/books/1" \
+    "http://dream.work/api/books/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u043c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430","page_count":345,"id":6}'
+    -d '{"name":"\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u043c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430","page_count":345,"id":13}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/books/1"
+    "http://dream.work/api/books/1"
 );
 
 let headers = {
@@ -596,7 +660,7 @@ let headers = {
 let body = {
     "name": "\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u043c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430",
     "page_count": 345,
-    "id": 6
+    "id": 13
 }
 
 fetch(url, {
@@ -645,16 +709,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/books/1" \
+    "http://dream.work/api/books/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"id":11}'
+    -d '{"id":13}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/books/1"
+    "http://dream.work/api/books/1"
 );
 
 let headers = {
@@ -663,7 +727,7 @@ let headers = {
 };
 
 let body = {
-    "id": 11
+    "id": 13
 }
 
 fetch(url, {

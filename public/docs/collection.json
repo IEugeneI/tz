@@ -2,7 +2,7 @@
     "variables": [],
     "info": {
         "name": "Laravel API",
-        "_postman_id": "3d00fc5d-3b5b-4d34-87d3-ecceb3c4a181",
+        "_postman_id": "d43a5b41-29b6-4460-becf-bacc64c95160",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -16,7 +16,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost",
+                            "host": "dream.work",
                             "path": "api\/books",
                             "query": []
                         },
@@ -44,7 +44,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost",
+                            "host": "dream.work",
                             "path": "api\/books",
                             "query": []
                         },
@@ -72,7 +72,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost",
+                            "host": "dream.work",
                             "path": "api\/books\/:book",
                             "query": []
                         },
@@ -100,7 +100,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost",
+                            "host": "dream.work",
                             "path": "api\/books\/:book",
                             "query": []
                         },
@@ -117,7 +117,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"\\u041c\\u0430\\u0441\\u0442\\u0435\\u0440 \\u0438 \\u043c\\u0430\\u0440\\u0433\\u0430\\u0440\\u0438\\u0442\\u0430\",\n    \"page_count\": 345,\n    \"id\": 6\n}"
+                            "raw": "{\n    \"name\": \"\\u041c\\u0430\\u0441\\u0442\\u0435\\u0440 \\u0438 \\u043c\\u0430\\u0440\\u0433\\u0430\\u0440\\u0438\\u0442\\u0430\",\n    \"page_count\": 345,\n    \"id\": 13\n}"
                         },
                         "description": "",
                         "response": []
@@ -128,7 +128,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "localhost",
+                            "host": "dream.work",
                             "path": "api\/books\/:book",
                             "query": []
                         },
@@ -145,7 +145,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"id\": 11\n}"
+                            "raw": "{\n    \"id\": 13\n}"
                         },
                         "description": "",
                         "response": []
